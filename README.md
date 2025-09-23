@@ -1,6 +1,6 @@
 🚀 Landing Page da DIO com HTML e CSS
 
-Este projeto tem como objetivo a construção de uma landing page responsiva utilizando HTML e CSS, colocando em prática:
+Este projeto tem como objetivo a construção de uma landing page utilizando HTML e CSS, colocando em prática:
 
 - Fundamentos do CSS;
 - Propriedades básicas da linguagem de estilização;
