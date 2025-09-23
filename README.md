@@ -1,4 +1,4 @@
-🚀 Landing Page da DIO com HTML e CSS
+# 🚀 Landing Page da DIO com HTML e CSS
 
 Este projeto tem como objetivo a construção de uma landing page utilizando HTML e CSS, colocando em prática:
 
