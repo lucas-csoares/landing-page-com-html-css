@@ -1,0 +1,39 @@
+@import url('reset.css');
+
+
+body {
+    background-color: black;
+}
+
+h2 {
+    color: #33A8DB; /* Valor do tipo hexadecimal (vermelho, verde e azul) */
+    font-size: 2 rem; /*2x o tamanho da fonte do elemento raiz*/
+    font-weight: bold; /* mais espesso/negrito */
+    letter-spacing: 4px; /*espaçamento entre letras*/
+    text-transform: uppercase; /*transforma o texto em maiúsculo*/
+    margin-bottom: 24px; /*margem inferior*/
+}
+
+
+p {
+    color: white;
+}
+
+
+section {
+    margin: 100px auto; /*margem superior e inferior de 100px e auto (navegador calcula automaticamente as margens) para as laterais*/
+}
+
+.banner {
+    background-image: linear-gradient(rgba(2, 2, 2, .5), rgba(14, 14, 231, 0.5), rgba(2, 2, 2, .5)), /*Gera um gradiente linear com transição de cores: preto -> azul claro -> preto*/
+    url('../images/banner.png'); /*Adiciona a imagem de fundo*/
+    background-size: cover; /*A imagem de fundo cobre todo o espaço do elemento*/
+    background-repeat: no-repeat; /*A imagem de fundo não se repete*/
+    height: 600px;
+    padding-top: 60px; /*Espaçamento interno superior*/
+    border-bottom: 1px solid #33A8DB; /*Borda inferior de 1px, sólida e azul*/
+}
+
+
+
+
