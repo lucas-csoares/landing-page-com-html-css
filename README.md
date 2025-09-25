@@ -1,10 +1,33 @@
-# Criando Landing Page da DIO com HTML e CSS 
+# 🚀 Landing Page da DIO com HTML e CSS
 
-Esse projeto tem propósito de construir uma landing page com HTML e CSS, para colocar em prática os fundamentos do CSS, as propriedades básicas da linguagem de estilização, além de trabalhar com as unidades de medidas relativas e absolutas.
+Este projeto tem como objetivo a construção de uma landing page utilizando HTML e CSS, colocando em prática:
 
-A landing page deve seguir o resultado do figma:
+- Fundamentos do CSS;
+- Propriedades básicas da linguagem de estilização;
+- Unidades de medida relativas e absolutas.
+
+## 🎯 Objetivo do Projeto
+
+A proposta é replicar o protótipo criado pela profa. [Michele Queiroz Ambrosio](https://github.com/micheleambrosio) para o curso de CSS, oferecido pela [Digital Innovation One (DIO)](https://www.dio.me/)
+
+Protótipo no Figma:
+
+[Click aqui para acessar](https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=2%3A6) 
 
 ![image](https://user-images.githubusercontent.com/55519539/183538055-6cce606c-7d1d-4d15-a4be-ffeb5b37c956.png)
 
-[Link do Figma](https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=2%3A6) contendo o protótipo que será usado para o projeto.
+## 📂 Estrutura do Projeto
 
+- `index.html`: estrutura base da página;
+- `style.css`: arquivo de estilização principal;
+- `/assets`: recursos utilizados (imagens, ícones, etc.)
+
+## 🔗 Referências
+
+- [Repositório oficial do desafio](https://github.com/digitalinnovationone/trilha-css-desafio-01)
+- [Formação CSS Web Developer](https://web.dio.me/track/formacao-css-web-developer)
+
+## Tecnologias usadas
+
+- HTML
+- CSS
