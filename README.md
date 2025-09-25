@@ -18,9 +18,10 @@ Protótipo no Figma:
 
 ## 📂 Estrutura do Projeto
 
-- `index.html`: estrutura base da página;
-- `style.css`: arquivo de estilização principal;
-- `/assets`: recursos utilizados (imagens, ícones, etc.)
+- `index.html`: arquivo principal da aplicação, responsável pela estrutura HTML da página;
+- `/assets/images`: armazena as imagens utilizadas no projeto (ícones, banners, etc.);
+- `/assets/css/style.css`: define o design e layout da landing page;
+- `/assets/css/reset.css`: remove estilos padrões de navegadores para garantir consistência.
 
 ## 🔗 Referências
 
