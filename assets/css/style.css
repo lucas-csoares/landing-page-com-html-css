@@ -1,10 +1,11 @@
 @import url('reset.css');
 
-
-body {
+/*  Estilização do corpo da página */body {
     background-color: black;
 }
 
+
+/* Estilização dos títulos */
 h2 {
     color: #33A8DB; /* Valor do tipo hexadecimal (vermelho, verde e azul) */
     font-size: 2 rem; /*2x o tamanho da fonte do elemento raiz*/
@@ -15,15 +16,19 @@ h2 {
 }
 
 
+/* Estilização dos parágrafos */
 p {
     color: white;
 }
 
 
+/* Estilização das seções */
 section {
     margin: 100px auto; /*margem superior e inferior de 100px e auto (navegador calcula automaticamente as margens) para as laterais*/
 }
 
+
+/* Estilização do banner */
 .banner {
     background-image: linear-gradient(rgba(2, 2, 2, .5), rgba(14, 14, 231, 0.5), rgba(2, 2, 2, .5)), /*Gera um gradiente linear com transição de cores: preto -> azul claro -> preto*/
     url('../images/banner.png'); /*Adiciona a imagem de fundo*/
@@ -35,5 +40,25 @@ section {
 }
 
 
+/* Estilização do conteúdo dentro do banner */
+.banner .banner-content {
+    color: white; /*Cor do texto branco (todos os filhos herdarão essa cor de fonte)*/
+    width: 600px; /*Largura de 600px*/
+    margin: auto; /*Margem automática (centraliza o conteúdo)*/
+    text-align: center; /*Alinha o texto ao centro*/
+}
 
 
+/* Estilização do título dentro do banner*/
+
+/*: para a cor de fonte o <h1> teria branco por herança, mas a regra mais específica (.banner h1) substitui a cor para transparent. */
+
+.banner .banner-content h1 {
+    font-size: 2.5rem; /*2.5x o tamanho da fonte do elemento raiz*/
+    font-weight: 900; /*mais espesso/negrito*/
+    text-transform: uppercase; /*transforma o texto em maiúsculo*/
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /*Adiciona um gradiente linear azul ao texto*/;
+    color: transparent; /*Cor do texto transparente*/
+    -webkit-background-clip: text; /*Recorta o fundo para o texto*/
+    background-clip: text; /*Recorta o fundo para o texto*/
+}
