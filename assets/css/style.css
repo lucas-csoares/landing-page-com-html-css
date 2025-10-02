@@ -62,3 +62,62 @@ section {
     -webkit-background-clip: text; /*Recorta o fundo para o texto*/
     background-clip: text; /*Recorta o fundo para o texto*/
 }
+
+
+/*
+-webkit-background-clip: text; + background-clip: text; => Faz com que o gradiente seja aplicado apenas ao texto, criando um efeito visual interessante. 
+*/
+
+/* Estilização do parágrafo dentro do banner */
+
+.banner .banner-content p {
+    font-size: 1.25rem; /*2.5x o tamanho da fonte do elemento raiz*/
+    margin: 16px 0 24px; /*margem superior de 16px, margem inferior de 24px e margem lateral 0*/
+}   
+
+
+/* Estilização do logo dentro do banner */
+
+.banner .banner-content .logo {
+    background-color: rgba(0, 0, 0, .1); /*Cor de fundo preta com 25% de opacidade*/
+    height: 250px; /*altura de 250px*/
+    width: 250px; /*largura de 250px*/
+    margin: auto; /*margem automática (centraliza o conteúdo)*/
+    border-radius: 50%; /*borda arredondada (círculo)*/
+    margin-bottom: 16px;
+}
+
+/*O que seria melhor: usar o `.banner .banner-content . logo` ou 
+o `.banner .logo`? 
+Usar o `.banner .banner-content . logo` é mais específico e claro,
+indicando exatamente onde o logo está localizado dentro da estrutura do HTML.
+Isso pode ajudar a evitar conflitos de estilo se houver outros elementos com a classe `logo` em outras partes da página.
+No entanto, se você tiver certeza de que não haverá outros elementos com a classe `logo` em outras partes da página,
+poderia usar o `.banner .logo` para simplificar o seletor.
+*/
+
+
+/* Estilização da imagem do logo dentro do banner */
+
+.banner .banner-content .logo img {
+    margin: auto;
+    width: 100%; /*A imagem do logo ocupa 100% da largura do contêiner pai (.logo), que é a área de conteúdo disponível*/
+    height: 100%; /*A imagem do logo ocupa 100% da altura do contêiner pai (.logo), que é a área de conteúdo disponível*/
+    object-fit: contain; /*A imagem do logo é redimensionada para caber dentro do contêiner sem distorção*/
+}
+
+/* Estilização d botão dentro do banner */
+
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 1rem; /*1x o tamanho da fonte do elemento raiz*/
+    font-weight: bold; /* mais espesso/negrito */
+    padding: 16px 32px; /*espaçamento interno: 16px (superior e inferior) e 32px (lateral)*/   
+    background-color: transparent; /*cor de fundo transparente*/
+    text-transform: uppercase; /*transforma o texto em maiúsculo*/
+    letter-spacing: 4px; /*espaçamento entre letras*/
+    border-image: linear-gradient(#3BA1CD, #1572B7); /*Adiciona um gradiente linear azul à borda*/
+    border-image-slice: 16; /*Define como o gradiente é cortado e distribuído na borda*/
+    border-radius: 30px; /*borda arredondada*/
+}
+
