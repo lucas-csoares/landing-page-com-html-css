@@ -172,6 +172,7 @@ Quando você não define a largura de um elemento, ele tende a ocupar toda a lar
     background-image: url("../images/woman-code.png"); /*Adiciona a imagem de fundo*/
     background-size: cover; /*A imagem de fundo cobre todo o espaço do elemento*/
     background-repeat: no-repeat; /*A imagem de fundo não se repete*/
+    background-attachment: fixed; /*A imagem de fundo fica fixa ao rolar a página*/
     padding: 200px; /*Espaçamento interno*/;
 }
 
