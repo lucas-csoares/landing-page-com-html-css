@@ -1,14 +1,15 @@
 @import url('reset.css');
 
-/*  Estilização do corpo da página */body {
+/*  Estilização do corpo da página */
+body {
     background-color: black;
 }
 
 
-/* Estilização dos títulos */
+/* Estilização dos títulos h2*/
 h2 {
     color: #33A8DB; /* Valor do tipo hexadecimal (vermelho, verde e azul) */
-    font-size: 2 rem; /*2x o tamanho da fonte do elemento raiz*/
+    font-size: 2rem; /*2x o tamanho da fonte do elemento raiz*/
     font-weight: bold; /* mais espesso/negrito */
     letter-spacing: 4px; /*espaçamento entre letras*/
     text-transform: uppercase; /*transforma o texto em maiúsculo*/
@@ -100,13 +101,13 @@ poderia usar o `.banner .logo` para simplificar o seletor.
 /* Estilização da imagem do logo dentro do banner */
 
 .banner .banner-content .logo img {
-    margin: auto;
+    margin: auto; /*margem automática (centraliza a imagem dentro do contêiner pai .logo)*/
     width: 100%; /*A imagem do logo ocupa 100% da largura do contêiner pai (.logo), que é a área de conteúdo disponível*/
     height: 100%; /*A imagem do logo ocupa 100% da altura do contêiner pai (.logo), que é a área de conteúdo disponível*/
     object-fit: contain; /*A imagem do logo é redimensionada para caber dentro do contêiner sem distorção*/
 }
 
-/* Estilização d botão dentro do banner */
+/* Estilização do botão dentro do banner */
 
 .banner .banner-content button {
     color: #31A8DD;
@@ -121,3 +122,110 @@ poderia usar o `.banner .logo` para simplificar o seletor.
     border-radius: 30px; /*borda arredondada*/
 }
 
+/* Estilização do conteúdo do curso */
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content .modules-list {
+    margin: 24px 0; /*margem superior e inferior de 24px e margem lateral 0*/   
+}
+
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    padding: 16px;
+    border: 1px solid #33A8DB; /*Borda de 1px, sólida e azul*/
+    background-color: #252525;;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);  
+}
+
+/*Qual o significado de cada valor do box-shadow? 
+
+- inset: faz com que a sombra seja aplicada para dentro do elemento, criando um efeito de profundidade interna.
+- -5px: deslocamento horizontal da sombra (negativo, então a sombra se move
+- 6px: deslocamento vertical da sombra (positivo, então a sombra se move para baixo)
+- 8px: raio de desfoque da sombra (quanto maior o valor, mais desfocada a sombra fica)
+- rgba(0, 0, 0, .7): cor da sombra (preto com 70% de opacidade)
+*/
+
+/*Por que quando não defino a largura, o elemento fica mais largo?
+
+Quando você não define a largura de um elemento, ele tende a ocupar toda a largura disponível (content-box) do seu contêiner pai, o que pode fazer com que ele pareça mais largo do que o esperado. Ao definir uma largura específica, você controla exatamente quanto espaço o elemento deve ocupar evitando que ele se expanda além do desejado. 
+*/
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+/* Estilização da seção Transform World */
+
+#transform-world {
+    height: 560px;
+    border-top: 0.1px solid #33A8DB; /*Borda superior de 0.1px, sólida e azul*/
+    border-bottom: 0.1px solid #33A8DB;
+    background-image: url("../images/woman-code.png"); /*Adiciona a imagem de fundo*/
+    background-size: cover; /*A imagem de fundo cobre todo o espaço do elemento*/
+    background-repeat: no-repeat; /*A imagem de fundo não se repete*/
+    padding: 200px; /*Espaçamento interno*/;
+}
+
+/*Por que no bloco `#transform-world` foi necessário repetir valores para propriedades diferentes no caso de `border-top` e `border-bottom`? Teria outra forma melhor para evitar essa repetição e aplicar para ambos?
+
+Isso não é suportado diretamente em CSS. A forma mais clara e comum é definir `border-top` e `border-bottom` separadamente, como foi feito no código.
+
+*/
+
+#transform-world p {
+    font-size: 2.5rem; /*2.5x o tamanho da fonte do elemento raiz*/
+    font-weight: 900; /*mais espesso/negrito*/
+    text-transform: lowercase; /*transforma o texto em minúsculo*/
+    max-width: 250px; /*Define uma largura máxima de 250px para o parágrafo*/
+    text-shadow: 4px 8px 6px #0c83d6; /*Adiciona uma sombra ao texto*/
+}
+
+
+/* Qual o propósito de definir uma largura máxima para um parágrafo?
+
+- Define um limite para a largura do parágrafo, o que pode melhorar a legibilidade do texto, especialmente em telas maiores. Isso evita que as linhas de texto fiquem muito longas, o que pode ser cansativo para os olhos ao ler. Ao limitar a largura, o texto fica mais fácil de ler e o layout da página fica mais organizado.
+
+*/
+
+/* Estilização da seção Professional Challenges */
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+/* 
+#professional-challenges h2 {
+    font-size: 2rem; 
+} */
+
+#professional-challenges img {
+    margin: 32px 0;
+}
+
+/* Por que definir uma margem para a imagem? 
+
+- Define um espaço ao redor da imagem, separando-a de outros elementos na página. Isso ajuda a melhorar o layout visual, evitando que a imagem fique muito próxima de outros conteúdos, como o título ou o texto. A margem superior e inferior de 32px cria um espaçamento adequado, tornando a página mais agradável aos olhos e facilitando a leitura.
+
+*/
+
+footer {
+    padding: 60px 0; /*Espaçamento interno superior e inferior de 60px e 0 para as laterais*/   
+    width: auto; /*Largura automática (navegador calcula automaticamente a largura)*/
+    text-align: center;
+    border-top: 0.1px solid #33A8DB; /*Borda superior de 0.1px, sólida e azul*/
+}
+
+footer p a{
+    color: #33A8DB;
+    text-decoration: none; /*Remove o sublinhado do link*/
+    font-weight: bold; /* mais espesso/negrito */
+}
